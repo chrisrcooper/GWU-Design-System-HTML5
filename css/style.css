@@ -908,8 +908,11 @@ section#global-footer ul li a {
 #breadcrumb {
 	height: 36px;
 	font-size: 11px;
-	
+	display: none;
 } 
+body.breadcrumb #breadcrumb {
+	display: block;
+}
 
 #breadcrumb span {
 	color: #999;
