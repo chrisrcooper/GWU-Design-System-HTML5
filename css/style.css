@@ -1188,6 +1188,7 @@ body.breadcrumb #breadcrumb {
   
   #container > header div.limiter img.logo {
 	margin-bottom: 0;
+	float: left;
   }
   
   
@@ -1268,7 +1269,8 @@ body.breadcrumb #breadcrumb {
   }
   
   body.three-nine #right,
-  body.nine-three #left {
+  body.nine-three #left,
+  body.eight-four #left {
   	display: none;
   }
   
