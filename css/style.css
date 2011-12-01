@@ -1136,6 +1136,23 @@ body.breadcrumb #breadcrumb {
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
   
+  
+  /*
+   * logo state
+   */
+   
+  #header .logo-full,
+  #header .logo-wordmark,
+  #header .logo-slogan {
+  	display: none;
+  }
+  
+  body.logo-full #header .logo-full,
+  body.logo-wordmark #header .logo-wordmark,
+  body.logo-slogan #header .logo-slogan {
+  	display: block;
+  }
+  
   /*
    * typography
    */
@@ -1151,6 +1168,7 @@ body.breadcrumb #breadcrumb {
   #container > header div.limiter img.logo {
 	margin-bottom: 0;
   }
+  
   
   #container > header {
   	height: 77px;
