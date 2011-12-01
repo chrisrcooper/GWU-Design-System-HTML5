@@ -1,0 +1,631 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body class="three-six-three">
+
+  <div id="container">
+    <header id="header">
+		<div class="limiter">
+			<a href="http://www.gwu.edu">
+				<img class="logo" src="img/logo.png" width="405" height="27" 
+					alt="The George Washington University" title="The George Washington University">
+			</a>			
+			<div id="primary-navigation">
+				<ul class="menu">
+					<li class="first leaf"><a href="http://www.gwu.edu/" title="">GW Home</a></li>
+					<li class="expanded"><a href="/" title="" class="active">GW Links</a>
+					<ul class="menu">
+						<li class="first expanded"><a href="http://www.gwu.edu/explore" title="">Explore</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://www.gwu.edu/explore/aboutgw" title="">About GW</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/explore/leadership" title="">Leadership</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/explore/visitingcampus" title="">Visiting Campus</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/explore/academiclife" title="">Academic Life</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/explore/campuslife" title="">Campus Life</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/explore/gwathletics" title="">GW Athletics</a></li>
+							<li class="last leaf"><a href="http://www.gwu.edu/explore/mediaroom" title="">Media Room</a></li>
+						</ul>
+						</li>
+						<li class="expanded"><a href="http://www.gwu.edu/apply" title="">Apply</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://www.gwu.edu/apply/undergraduateadmissions" title="">Undergraduate Admissions</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/apply/graduateprofessional" title="">Graduate &amp; Professional</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/apply/nondegree" title="">Non-Degree</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/apply/precollege" title="">Pre-College</a></li>
+							<li class="last leaf"><a href="http://www.gwu.edu/apply/costsfinancialplanning" title="">Costs &amp; Financial Planning</a></li>
+						</ul>
+						</li>
+						<li class="expanded"><a href="http://www.gwu.edu/learn" title="">Learn</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://www.gwu.edu/learn/collegesschools" title="">Colleges &amp; Schools</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/learn/undergraduate" title="">Undergraduate</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/learn/graduateprofessional" title="">Graduate &amp; Professional</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/learn/gwinternational" title="">GW International</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/learn/onlinelearning" title="">Online Learning</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/learn/offcampusprograms" title="">Off-Campus Programs</a></li>
+							<li class="last leaf"><a href="http://www.gwu.edu/learn/libraries" title="">Libraries</a></li>
+						</ul>
+						</li>
+						<li class="expanded"><a href="http://www.gwu.edu/discover" title="">Discover</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://www.gwu.edu/discover/discoveriesinnovations" title="">Discoveries &amp; Innovations</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/discover/facultyexpertise" title="">Faculty Expertise</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/discover/researchtraining" title="">Research Training</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/discover/centersinstitutes" title="">Centers &amp; Institutes</a></li>
+							<li class="last leaf"><a href="http://www.gwu.edu/discover/facilitiestechnology" title="">Facilities &amp; Technology</a></li>
+						</ul>
+						</li>
+						<li class="expanded"><a href="http://www.gwu.edu/connect" title="">Connect</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://www.gwu.edu/connect/alumni" title="">Alumni</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/connect/community" title="">Community</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/connect/government" title="">Government</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/connect/parents" title="">Parents</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/connect/onlinenetworks" title="">Online Networks</a></li>
+							<li class="last leaf"><a href="http://www.gwu.edu/connect/corporationspartners" title="">Corporations &amp; Partners</a></li>
+						</ul>
+						</li>
+						<li class="last expanded"><a href="http://www.gwu.edu/give" title="">Give</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://www.gwu.edu/give/thepowerofgiving" title="">The Power Of Giving</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/give/givingopportunities" title="">Giving Opportunities</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/give/waystogive" title="">Ways To Give</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/give/honoringdonors" title="">Honoring Donors</a></li>
+							<li class="last leaf"><a href="http://www.gwu.edu/give/volunteer" title="">Volunteer</a></li>
+						</ul>
+						</li>
+					</ul>
+					</li>
+					<li class="last expanded"><a href="/" title="" class="active">Info For</a>
+					<ul class="menu">
+						<li class="first expanded"><a href="/" title="" class="active">Students</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="https://my.gwu.edu/mod/email/?role=student" title="">GWMail</a></li>
+							<li class="leaf"><a href="http://blackboard.gwu.edu/webapps/portal/frameset.jsp" title="">Blackboard</a></li>
+							<li class="leaf"><a href="https://banweb.gwu.edu/" title="">GWeb (Records &amp; Registration)</a></li>
+							<li class="leaf"><a href="http://gwired.gwu.edu/" title="">GWired (Student Services)</a></li>
+							<li class="leaf"><a href="http://my.gwu.edu/" title="">MyGW Portal</a></li>
+							<li class="leaf"><a href="http://colonialcentral.gwu.edu/" title="">Colonial Central (Financial Services)</a></li>
+							<li class="leaf"><a href="http://gwired.gwu.edu/gwdining/index.html" title="">GWorld Card And Colonial Cash</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/~bulletin/" title="">GW Bulletin (Course Descriptions)</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/learn/libraries" title="">University Libraries</a></li>
+							<li class="last leaf"><a href="http://www.bkstr.com/Home/10001-10370-1?demoKey=d" title="">GW Bookstore</a></li>
+						</ul>
+						</li>
+						<li class="expanded"><a href="/" title="" class="active">Alumni</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://alumni.gwu.edu/connect/index.html" title="">Connect &amp; Share</a></li>
+							<li class="leaf"><a href="http://alumni.gwu.edu/benefits/index.html" title="">Benefits &amp; Services</a></li>
+							<li class="leaf"><a href="http://alumni.gwu.edu/programs/index.html" title="">Programs &amp; Events</a></li>
+							<li class="leaf"><a href="http://alumni.gwu.edu/support/index.html" title="">Volunteer &amp; Give</a></li>
+							<li class="last leaf"><a href="http://alumni.gwu.edu/benefits/transcripts.html" title="">Transcript Services</a></li>
+						</ul>
+						</li>
+						<li class="expanded"><a href="/" title="" class="active">Faculty And Staff</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://my.gwu.edu/" title="">MyGW Portal</a></li>
+							<li class="leaf"><a href="http://www.gwu.edu/~academic/Faculty_Personnel/main.htm" title="">Faculty Handbook</a></li>
+							<li class="leaf"><a href="http://colonialcommunity.gwu.edu/" title="">Colonial Community</a></li>
+							<li class="last leaf"><a href="http://www.gwu.edu/hr/" title="">Human Resources</a></li>
+						</ul>
+						</li>
+						<li class="last expanded"><a href="/" title="" class="active">Parents</a>
+						<ul class="menu">
+							<li class="first leaf"><a href="http://gwired.gwu.edu/parents/" title="">Parent Services</a></li>
+							<li class="leaf"><a href="http://colonialcentral.gwu.edu/billing/" title="">Online Tuition Payment</a></li>
+							<li class="leaf"><a href="https://services.jsatech.com/textpage.php?pageid=456&amp;cid=46&amp;" title="">Colonial Cash</a></li>
+							<li class="last leaf"><a href="http://www.gwu.edu/give/givingopportunities/colonialinsiders/parentscampaign" title="">Parents Campaign</a></li>
+						</ul>
+						</li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+			<form id="search">
+				<div id="search-holder">
+					<input type="text" name="search-input" id="search-input" value="Search">
+					<select>
+						<option value="gw">GW</option>
+						<option value="ccas">CCAS</option>
+						<option value="law">Law</option>
+					</select>
+					<button type="submit">Go</button>
+				</div>
+			</form>
+		</div>
+    </header>
+    <div id="main" role="main">
+		<div class="limiter">
+			<div id="local-header">
+				<section id="brand">
+					<a href="/"><img src="img/examples/brand.png" width="318" height="260" alt="Brand" title="Brand"></a>
+				</section>
+				<section id="hero">
+					<div>
+						<div class="hero-container">
+							<div class="images">
+								<img src="img/examples/hero-1.jpg" alt="" title="" width="640" height="260" class="selected">
+								<img src="img/examples/hero-2.jpg" alt="" title="" width="640" height="260">
+								<img src="img/examples/hero-3.jpg" alt="" title="" width="640" height="260">
+								<img src="img/examples/hero-1.jpg" alt="" title="" width="640" height="260">
+								<img src="img/examples/hero-2.jpg" alt="" title="" width="640" height="260">
+							</div>
+							<ul class="captions">
+								<li class="selected">
+									<a href="#">Pancakes with the Provost this Thursday, Join in on the Fun!</a>
+								</li>
+								<li>
+									<a href="#">Caption Data 2</a>
+								</li>
+								<li>
+									<a href="#">Caption Data 3</a>
+								</li>
+								<li>
+									<a href="#">Caption Data 4</a>
+								</li>
+								<li>
+									<a href="#">Caption Data 5</a>
+								</li>
+							</ul>
+							<ul class="menu">
+								<li class="first selected">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>				
+			</div>
+			<nav id="secondary-nav">
+				<ul class="menu">
+					<li class="first expanded"><a href="/leadership/provost/about-provost">About the Provost</a>
+					<ul class="menu">
+						<li class="first leaf"><a href="/leadership/provost/gw-community-helps-design-better-gelman-library">Article Long Title</a></li>
+						<li class="leaf"><a href="/leadership/provost/dr-steven-lerman-0">Biography</a></li>
+						<li class="leaf"><a href="/leadership/provost/office-history">Office History</a></li>
+						<li class="last leaf"><a href="/leadership/provost/speeches">Speeches</a></li>
+					</ul>
+					</li>
+					<li class="expanded"><a href="/leadership/provost/our-office">Our Office</a>
+					<ul class="menu">
+						<li class="first leaf"><a href="/leadership/provost/non-workflow-article">Non Workflow Article</a></li>
+						<li class="collapsed"><a href="/leadership/provost/senior-staff" title="">Senior Staff</a></li>
+						<li class="last leaf"><a href="/leadership/provost/department-directory">Department Directory</a></li>
+					</ul>
+					</li>
+					<li class="expanded"><a href="/leadership/provost/news-events" title="">News &amp; Events</a>
+					<ul class="menu">
+						<li class="first leaf"><a href="/leadership/provost/news-events/archives" title="">Archives</a></li>
+						<li class="last leaf"><a href="/leadership/provost/new-news">New News</a></li>
+					</ul>
+					</li>
+					<li class="leaf"><a href="/leadership/provost/initiatives">Initiatives</a></li>
+					<li class="last expanded"><a href="/leadership/provost/academic-resources">Resources</a>
+					<ul class="menu">
+						<li class="first leaf"><a href="/leadership/provost/policies-and-procedures-0">Policies &amp; Procedures</a></li>
+						<li class="last leaf"><a href="/leadership/provost/forms">Forms</a></li>
+					</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- content first -->
+			<div id="content" class="content">
+				<section class="featured-spotlight pane clearfix">
+					<header>
+						<h2>Featured Spotlight</h2>
+					</header>
+					<article>
+						<img src="img/examples/220x220.jpg" alt="" title="" width="220" height="220" class="inline-left">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis, neque in pulvinar scelerisque, neque leo consectetur risus, at eleifend enim urna quis lectus. Quisque cursus bibendum dui, at tristique felis volutpat at. Donec orci ante, dictum et lobortis at, egestas ac purus. Ut eu augue vel erat placerat posuere at nec elit. 
+						</p>
+						<p>Mauris sed velit nisi. Vivamus sed neque vel augue pellentesque sagittis. Praesent placerat, magna et sollicitudin luctus, ligula est porttitor libero, in elementum leo erat sit amet nisl. Donec eget mi in odio fermentum ultricies ac vel metus. Nam at enim justo, non euismod orci. Duis nisl quam, vehicula at placerat id, luctus nec lacus. Curabitur lacinia metus ac urna condimentum elementum.
+						</p>
+					</article>
+					<footer>
+						<a href="#" class="read-more">&raquo; Read more</a>
+					</footer>
+				</section>
+				<section class="featured-carousel pane">
+					<header>
+						<h2>Featured Carousel</h2>
+					</header>
+					<article>
+						<div class="slide-container clearfix">
+							<div class="slide selected">
+								<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+								<h3 class="mini">Lorem ipsum dolor</h3>
+							</div>
+							<div class="slide">
+								<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+								<h3 class="mini">Ipsum dolor lorem</h3>
+							</div>
+							<div class="slide">
+								<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+								<h3 class="mini">Dolor ipsum lorem</h3>
+							</div>
+						</div>
+						<div class="summary-container">
+							<div class="summary selected">
+								<h3><a href="#">Lorem ipsum dolor</a></h3>
+								<p>Praesent placerat, magna et sollicitudin luctus, ligula est porttitor libero, placerat, magna et sollicitudin luctus, ligula placerat, magna et sollicitudin luctus, ligula in elementum leo erat sit amet nisl.
+								</p>
+							</div>
+							<div class="summary">
+								<h3><a href="#">Ipsum dolor lorem</a></h3>
+								<p>Nam at enim justo, non euismod orci. Duis nisl quam, vehicula at placerat id, luctus nec lacus. Curabitur lacinia metus ac urna condimentum elementum.						
+								</p>
+							</div>
+							<div class="summary">
+								<h3><a href="#">Ipsum dolor lorem</a></h3>
+								<p>Mauris sed velit nisi. Vivamus sed neque vel augue pellentesque sagittis. Donec eget mi in odio fermentum ultricies ac vel metus.						
+								</p>
+							</div>
+						</div>
+					</article>
+					<footer>
+						<!-- no footer content -->
+					</footer>
+				</section>
+				<section class="image-teaser pane clearfix">
+					<header>
+						<h2>Image Teaser</h2>
+					</header>
+					<article class="inline-left">
+						<a href="#">
+							<img src="img/examples/220x80.jpg" alt="" title="" width="220" height="80">
+						</a>
+						<h4><a href="#">Pancakes with the Provost</a></h4>
+					</article>
+					<article>
+						<a href="#">
+							<img src="img/examples/220x80.jpg" alt="" title="" width="220" height="80">
+						</a>
+						<h4><a href="#">Winning the Championship, GW hoists ol' George to New Extremes</a></h4>
+					</article>
+					<footer>
+						<!-- no footer content -->
+					</footer>
+				</section>
+			</div>
+			<!-- sidebar left -->
+			<div id="left" class="sidebar">
+				<nav id="tertiary-nav">
+					<ul>
+						<li>
+							<a href="#"></a>
+						</li>
+					</ul>
+				</nav>
+				
+				<section class="headline-listing pane clearfix">
+					<header>
+						<h2>Headline Listing</h2>
+					</header>
+					<article>
+						<span class="title">
+							<a href="#">Pancakes for the Provost</a>
+						</span>
+						<span class="time">
+							August 17, 2011
+						</span>
+					</article>
+					<article>
+						<span class="title">
+							<a href="#">GW Wins First Place</a>
+						</span>
+						<span class="time">
+							July 25, 2011
+						</span>
+					</article>
+					<article>
+						<span class="title">
+							<a href="#">Mauris sed velit nisi</a>
+						</span>
+						<span class="time">
+							June 1, 2011
+						</span>
+					</article>
+					<footer>
+						<a href="#" class="read-more">&raquo; View all</a>
+					</footer>
+				</section>
+				
+				<section class="event-listing pane clearfix">
+					<header>
+						<h2>Event Listing</h2>
+					</header>
+					<article>
+						<div class="date event">
+				        	<div class='month'>
+				        		October
+				        	</div>
+				    		<div class='day'>
+				    			25
+				    		</div>
+				    		<div class='day-text'>
+				    			Tuesday					    		
+				    		</div>
+						</div>						
+						<span class="title">
+							<a href="#">GW Hosts President Clinton</a>
+						</span>
+					</article>
+					<article>
+						<div class="date event">
+							<div class='month'>
+								August
+							</div>
+							<div class='day-multi'>
+								11&mdash;
+							</div>
+							<div class='month'>
+								August
+							</div>
+							<div class='day-multi'>
+								18
+							</div>
+						</div>
+						<span class="title">
+							<a href="#">PHP Developer Conference at Lisner</a>
+						</span>
+					</article>
+					<article>
+						<div class="date event">
+				        	<div class='month'>
+				        		November
+				        	</div>
+				    		<div class='day'>
+				    			30
+				    		</div>
+				    		<div class='day-text'>
+				    			Wednesday					    		
+				    		</div>
+						</div>						
+						<span class="title">
+							<a href="#">Roti Grill Conference</a>
+						</span>
+					</article>			
+					<footer>
+						<a href="#" class="read-more">&raquo; View all</a>
+					</footer>
+				</section>
+			</div>
+			<!-- sidebar right -->
+			<div id="right" class="sidebar">
+				<section class="quick-links pane clearfix">
+					<header>
+						<h2>Quick Links</h2>
+					</header>
+					<article>
+						<ul>
+							<li><a href="#">&raquo; Lorem Ipsum</a></li>
+							<li><a href="#">&raquo; Ipsum Ipsum Dolar</a></li>
+							<li><a href="#">&raquo; Lorem Lorem</a></li>
+							<li><a href="#">&raquo; Ipsum Dolar Ipsum</a></li>
+							<li><a href="#">&raquo; Dolar Ipsum</a></li>
+							<li><a href="#">&raquo; Ipsum Lorem Dolar</a></li>
+						</ul>
+					</article>
+					<footer>
+						<!-- no footer content -->
+					</footer>
+				</section>
+				<section class="selector-links pane clearfix">
+					<header>
+						<h2>I am a …</h2>
+					</header>
+					<article>
+						<select>
+							<option value="student" class="selected">Student</option>
+							<option value="faculty">Faculty</option>
+							<option value="staff">Staff</option>
+							<option value="alumni">Alumni</option>
+						</select>
+						<div class="link-container">
+							<ul class="selected">
+								<li><a href="#">&raquo; Courses</a></li>
+								<li><a href="#">&raquo; Campus Map</a></li>
+								<li><a href="#">&raquo; Social Media</a></li>
+								<li><a href="#">&raquo; Lorem Ipsum</a></li>
+								<li><a href="#">&raquo; Undergraduate</a></li>
+								<li><a href="#">&raquo; Graduate</a></li>
+								<li><a href="#">&raquo; Part-time</a></li>
+								<li><a href="#">&raquo; Ipsum Ipsum Dolar</a></li>
+								<li><a href="#">&raquo; Lorem Lorem</a></li>
+								<li><a href="#">&raquo; Ipsum Dolar Ipsum</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">&raquo; Dolar Ipsum</a></li>
+								<li><a href="#">&raquo; Ipsum Lorem Dolar</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">&raquo; Human Resources</a></li>
+								<li><a href="#">&raquo; Benefits</a></li>
+								<li><a href="#">&raquo; Meetings</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">&raquo; Events</a></li>
+								<li><a href="#">&raquo; Community</a></li>
+								<li><a href="#">&raquo; Volunteering</a></li>
+								<li><a href="#">&raquo; Giving Back</a></li>
+							</ul>
+						</div>
+					</article>
+					<footer>
+						<!-- no footer content -->
+					</footer>
+				</section>
+			</div>
+		</div>
+    </div>
+    <footer id="footer">
+		<section id="local-footer" class="pane clearfix">
+			<header>
+				<h2>The Columbian College of Arts and Sciences</h2>
+			</header>
+			<article class="address inline-left">
+				<p class="address">
+					<span class="title">Rice Hall, Suite 801</span><br>
+					<span class="address">2121 I Street, NW</span><br>
+					<span class="city">Washington, DC 20052</span><br>
+					<span class="phone">Phone: (202) 994-6500</span>  |  
+					<span class="fax">Fax: (202) 994-6501</span><br>
+					<span class="email">
+						<a href="mailto:contactemail@provost.gwu.edu">contactemail@provost.gwu.edu</a>
+					</span>
+				</p>
+			</article>
+			<div class="right">
+				<article>
+					<div class="local-links">
+						<a href="#">Contact Us</a>  |  <a href="#">Maps & Directions</a>  |  
+						<a href="#">Link 3</a>  |  <a href="#">Link 4 Link 4</a>
+					</div>
+				</article>
+				<article>
+					<div class="social-links">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/icons/icon-fb.png" width="16" height="16" alt="Facebook" title="Facebook">
+									Columbian
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/icons/icon-twitter.png" width="16" height="16" alt="Twitter" title="Twitter">
+									@Columbian
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/icons/icon-social-youtube.gif" width="16" height="16" alt="YouTube" title="YouTube">
+									Discover Columbian
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/icons/icon-rss.png" width="16" height="16" alt="RSS" title="RSS">
+									Subscribe RSS
+								</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+			<footer>
+				<!-- no footer content -->
+			</footer>
+		</section>
+		
+		<section id="global-footer" class="clearfix">
+			<article>
+				<header>
+					<a href="http://www.gwu.edu">
+						<img class="logo" src="img/logo.png" width="336" height="23" 
+							alt="The George Washington University" title="The George Washington University">
+					</a>
+				</header>
+				<ul>
+					<li>
+						<a href="#">Campus Advisories</a>
+					</li>
+					</li>
+					<li>
+						<a href="#">Copyright</a>
+					</li>
+					<li>
+						<a href="#">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="#">Terms of Use</a>
+					</li>
+					<li>
+						<a href="#">Contact GW</a>
+					</li>
+					<li>
+						<a href="#">A - Z Index</a>
+					</li>
+				</ul>
+			</article>
+		</section>
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
