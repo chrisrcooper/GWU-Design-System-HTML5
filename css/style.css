@@ -594,8 +594,7 @@ ul.sponsor-logos li a {
 	display: block;
 }
 
-section.event-detail section.sub-section {
-	border-top: 1px dotted #ccc;
+section.sub-section {
 	border-bottom: 1px dotted #ccc;
 	
 	padding-top: 1.0em;
@@ -654,10 +653,14 @@ section.event-detail-sidebar a.call-to-action:hover {
 /*
  * person detail
  */
-section.person-detail {
-
+section.person-detail table {
+	color: #555;
 }
-
+section.person-detail table th {
+	vertical-align: top;
+	text-align: left;
+	padding-right: 0.5em;
+}
 
 /*
  * local footer
