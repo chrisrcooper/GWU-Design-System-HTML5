@@ -1,0 +1,31 @@
+Functionality and notes:
+
+- Body class options:
+
+-- Layouts
+
+Usage: <body class="three-six-three">
+
+Options:
+--- three-six-three
+--- three-nine
+--- nine-three
+--- eight-four
+
+
+-- Breadcrumb
+
+Usage: <body class="three-six-three breadcrumb">
+
+Options:
+--- breadcrumb
+
+
+-- Logos
+
+Usage: <body class="three-six-three breadcrumb logo-full">
+
+Options:
+--- logo-full
+--- logo-wordmark
+--- logo-slogan
