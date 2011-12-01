@@ -34,7 +34,7 @@
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
-<body class="three-six-three">
+<body class="three-six-three breadcrumb">
 
   <div id="container">
     <header id="header">
@@ -218,6 +218,16 @@
 					</li>
 				</ul>
 			</nav>
+			<nav id="breadcrumb">
+				<span>You are here:
+				<a href="#">Home</a>&nbsp;/
+				<a href="#">Our Office</a>&nbsp;/
+				<a href="#">Senior Staff</a>&nbsp;/
+				<a href="#">Jordan Swisher</a>&nbsp;/
+				<a href="#">History</a>&nbsp;/
+				<a href="#">Resume</a>
+				</span>
+			</nav>
 			<!-- content first -->
 			<div id="content" class="content">
 				<section class="article-content pane clearfix">
@@ -253,13 +263,27 @@
 				<nav id="tertiary-nav">
 					<ul class="menu">
 						<li class="first leaf"><a href="#">Biography</a></li>
-						<li class="expanded active-trail"><a href="#" title="" class="active-trail">Senior Staff</a>
-						<ul class="menu">
-							<li class="first leaf"><a href="#">Michael Johnson</a></li>
-							<li class="leaf active-trail active"><a href="#" class="active-trail active">Jordan Swisher</a></li>
-							<li class="leaf"><a href="#">Tim Caine</a></li>
-							<li class="last leaf"><a href="#">Rose Merywin</a></li>
-						</ul>
+						<li class="expanded active-trail">
+							<a href="#" title="" class="active-trail">Senior Staff</a>
+							<ul class="menu">
+								<li class="first leaf"><a href="#">Michael Johnson</a></li>
+								<li class="leaf active-trail expanded"><a href="#" class="active-trail">Jordan Swisher</a>
+									<ul class="menu">
+										<li class="first leaf active-trail expanded"><a class="active-trail" href="#">History</a>
+											<ul class="menu">
+												<li class="first leaf"><a href="#">Employment</a></li>
+												<li class="leaf"><a href="#">Living</a></li>
+												<li class="last leaf active-trail active expanded"><a class="active-trail active" href="#">Resume</a></li>
+											</ul>
+										</li>
+										
+										<li class="leaf"><a href="#">Affiliations</a></li>
+										<li class="last leaf"><a href="#">CV</a></li>
+									</ul>
+								</li>
+								<li class="leaf"><a href="#">Tim Caine</a></li>
+								<li class="last leaf"><a href="#">Rose Merywin</a></li>
+							</ul>
 						</li>
 						<li class="last leaf"><a href="#">Department Directory</a></li>
 					</ul>
