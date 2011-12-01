@@ -1200,7 +1200,8 @@ section#global-footer ul li a {
   	width: 220px;
   }
   
-  body.three-six-three #right {
+  body.three-six-three #right,
+  body.nine-three #right {
   	float: left;
   	width: 220px;
   	margin-left: 20px;
@@ -1217,6 +1218,16 @@ section#global-footer ul li a {
   	float: left;
   	width: 700px;
   	margin-left: 240px;
+  }
+  body.nine-three #content {
+  	width: 700px;
+  	margin-left: 0;
+  	float: left;
+  }
+  
+  body.three-nine #right,
+  body.nine-three #left {
+  	display: none;
   }
   
   body.eight-four #content {
