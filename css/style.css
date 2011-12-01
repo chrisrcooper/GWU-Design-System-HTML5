@@ -436,7 +436,28 @@ section.pane article p {
 	height: 138px;
 	
 	cursor: pointer;
-} 
+}
+
+.slide.overlay {
+	position: relative;
+}
+
+.slide.overlay div.video {
+	background-image: url(../img/overlay-play.png);
+	background-color: rgba(255, 255, 255, 0.3);
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.slide.overlay:hover div.video {
+	background-color: transparent;
+}
 
 .slide.selected {
 	background-image: url(../img/featured-carousel-selected.png);
