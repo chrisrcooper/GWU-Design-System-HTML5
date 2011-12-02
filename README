@@ -29,3 +29,20 @@ Options:
 --- logo-full
 --- logo-wordmark
 --- logo-slogan
+
+-- Local Header
+
+Usage: <body class="three-six-three breadcrumb logo-full large-local-header">
+
+Options:
+--- large-local-header
+--- small-local-header
+--- legacy-local-header
+--- legacy-local-header medium-local-header
+
+-- Navigation
+
+Usage: <body class="three-six-three breadcrumb logo-full large-local-header legacy-local-header remove-secondary-nav">
+
+Options:
+--- remove-secondary-nav
