@@ -442,21 +442,24 @@ section.pane article p {
 	position: relative;
 }
 
-.slide.overlay div.video {
+.slide.overlay a.video {
 	background-image: url(../img/overlay-play.png);
-	background-color: rgba(255, 255, 255, 0.3);
 	background-repeat: no-repeat;
 	background-position: center center;
 	z-index: 1000;
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
+	top: 50%;
+	right: 50%;
+	margin-top: -19px;
+	margin-right: -19px;
+	width: 39px;
+	height: 39px;
+	
+	opacity: 0.6;
 }
 
-.slide.overlay:hover div.video {
-	background-color: transparent;
+.slide.overlay a.video:hover {
+	opacity: 1.0;	
 }
 
 .slide.selected {
@@ -621,12 +624,6 @@ section.sub-section {
 	padding-top: 1.0em;
 }
 
-section.event-detail-sidebar .caption {
-	font-style: italic;
-	font-size: 0.8em;
-	line-height: 1.0em;
-}
-
 section.event-detail-sidebar article,
 section.event-detail-sidebar footer {
 	background-color: #eee4d1;
@@ -644,7 +641,7 @@ section.event-detail-sidebar h2:first-child {
 
 section.event-detail-sidebar a.call-to-action {
 	display: block;
-	width: 260px;
+	width: 100%;
 	height: 50px;
 	background-color: #2971a7;
 	
@@ -681,6 +678,16 @@ section.person-detail table th {
 	vertical-align: top;
 	text-align: left;
 	padding-right: 0.5em;
+}
+
+section.person-detail > header {
+	margin-bottom: 1.0em;
+}
+
+section.person-detail > article {
+	background-image: url(../img/bg-main-gradient.png);
+	background-repeat: repeat-x;
+	background-position: center .5em;
 }
 
 /*
@@ -1021,35 +1028,19 @@ body.breadcrumb #breadcrumb {
     padding-left: 2.0em;
     text-transform: capitalize;
     border-top: 1px dotted #ccc;
-    /* guillemet removal
-    background-image: url(../images/bgSN1Li.gif);
-    background-repeat: no-repeat;
-    background-position: 13px center;
-    */
 }
 
 #tertiary-nav ul.menu li ul li.active-trail {
-    /* guillemet removal
-    background-image: url(../images/bgSN1ParentActive.gif);
-    */
+
 }
 
 #tertiary-nav ul.menu li ul li a.active,
 #tertiary-nav ul.menu li ul li a.active-trail {
     line-height: 16px;
-    /* guillemet removal
-    background-image: url(../images/bgSN1LiHover.gif);
-    background-repeat: no-repeat;
-    background-position: 13px center;
-    */
+
 }
 
 #tertiary-nav ul.menu li ul li a:hover {
-    /* guillemet removal
-    background-image: url(../images/bgSN1Li.gif);
-    background-repeat: no-repeat;
-    background-position: 13px center;
-    */
 
 }
 
@@ -1120,7 +1111,29 @@ body.breadcrumb #breadcrumb {
 	font-style: italic;
 	color: #555;
 }
+.caption {
+	font-style: italic;
+	font-size: 0.8em;
+	line-height: 1.0em;
+}
 
+/*
+ * css3 lightbox
+ * http://sixrevisions.com/css/semantic-css3-lightboxes/
+ */
+
+.lightbox { left: -999em; position: absolute; }
+.lightbox:target { bottom: 0; left: 0; right: 0; top: 0; position: absolute; }
+.lightbox:target .close a { background: rgba(0, 0, 0, 0.75); bottom: 0; left: 0; right: 0; top: 0; position: absolute; z-index: 1; }
+.close span { color: #FFFFFF; font-size: 2em; text-indent: 0; position: absolute; right: 0.5em; top: 0.5em; }
+.close {text-indent: -999em;}
+.lightbox:target div { background: #FFFFFF; position: absolute; left: 50%; top: 50%; z-index: 99; }
+.w60p { margin-left: -30%; width: 60%; } .w300 { margin-left: -150px; width: 300px; } .w640 { margin-left: -320px; width: 640px; }
+.h60 { height: 60px; margin-top: -30px; } .h400 { height: 400px; margin-top: -200px; } .h386 { height: 386px; margin-top: -193px; }
+.scroll { overflow-y: scroll; padding: 0 1em; }
+.boxfocus { bottom: 0; left: 0; right: 0; top: 0; position: absolute; }
+.boxfocus div {	background: #FFFFFF; position: absolute; left: 50%; top: 50%; z-index: 99; }
+.boxfocus .close a { background-image: url('img/trans.png'); bottom: 0; left: 0; right: 0; top: 0; position: absolute; z-index: 1; }
 
 
 /* ==|== non-semantic helper classes ========================================
