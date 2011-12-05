@@ -5,6 +5,12 @@
 $(document).ready(function()
 {
 	/*
+	 * prep scrollable, part of jQuery Tools
+	 */
+	
+	$(".scrollable").scrollable();
+	 
+	/*
 	 * give elements max height of tallest child
 	 */
 	$('div.summary-container').equalHeights();
@@ -31,9 +37,10 @@ $(document).ready(function()
 		$(this).siblings('.selected').removeClass('selected');
 		$(this).addClass('selected');	
 		var slide_clicked = $(this).index()+1;
+		var set_clicked = $(this).parent().index()+1;		
 		
 		$('div.summary-container .summary.selected').removeClass('selected');
-		$('div.summary-container .summary:nth-child('+slide_clicked+')').addClass('selected');
+		$('div.summary-container .summary:nth-child('+(((set_clicked-1)*3)+slide_clicked)+')').addClass('selected');
 					
 	});
 	

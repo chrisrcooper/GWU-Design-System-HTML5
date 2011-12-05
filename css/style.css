@@ -429,6 +429,39 @@ section.pane article p {
 /*
  * featured carousel
  */
+
+section.featured-carousel article {
+	position: relative;
+}
+
+section.featured-carousel a.prev,
+section.featured-carousel a.next {
+	background-image: url(../img/carousel-nav.gif);
+	display: block;
+	height: 12px;
+	width: 6px;
+	text-indent: -9999em;
+	position: absolute;
+	top: 55px;
+	
+	cursor: pointer;
+}
+
+section.featured-carousel a.prev.disabled,
+section.featured-carousel a.next.disabled {
+	display: none;
+}
+
+section.featured-carousel a.next {
+	background-position-x: -6px;
+	right: 0;
+}
+
+section.featured-carousel .scrollable {
+	width: 432px;
+	margin-left: 15px;
+}
+
 .slide {
 	float: left;
 	margin: 0 10px;
@@ -992,8 +1025,7 @@ body.breadcrumb #breadcrumb {
     color: #4f4f4f;
 }
 
-#tertiary-nav ul.menu li a.active,
-#tertiary-nav ul.menu li a.active-trail {
+#tertiary-nav ul.menu li a.active {
 	border-top: 1px solid #073f5d;
 	background-color: #4282b1;    
     color: #fff;
@@ -1115,6 +1147,44 @@ body.breadcrumb #breadcrumb {
 	font-style: italic;
 	font-size: 0.8em;
 	line-height: 1.0em;
+}
+
+/*
+ * scrollable, part of jQuery Tools
+ */
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: inherit;
+	height: 138px;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accommodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+}
+
+/*
+	a single item. must be floated in horizontal scrolling.
+	typically, this element is the one that *you* will style
+	the most.
+*/
+.items div {
+	float:left;
 }
 
 /*

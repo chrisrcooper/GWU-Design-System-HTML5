@@ -294,22 +294,63 @@
 						<h2>Featured Carousel</h2>
 					</header>
 					<article>
-						<div class="slide-container clearfix">
-							<div class="slide selected">
-								<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
-								<h3 class="mini">Lorem ipsum dolor</h3>
-							</div>
-							<div class="slide overlay">
-								<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
-								<h3 class="mini">Ipsum dolor lorem</h3>
-								<a href="#video" class="video" title="Video Lightbox"></a>
-							</div>
-							<div class="slide">
-								<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
-								<h3 class="mini">Dolor ipsum lorem</h3>
+						<a class="prev browse left">Previous</a>
+						<div class="slide-container clearfix scrollable">	
+							<div class="items">						
+								<!-- set 1-3 -->
+								<div>
+									<div class="slide selected">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">Lorem ipsum dolor</h3>
+									</div>
+									<div class="slide overlay">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">Ipsum dolor lorem</h3>
+										<a href="#video" class="video" title="Video Lightbox"></a>
+									</div>
+									<div class="slide">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">Dolor ipsum lorem</h3>
+									</div>
+								</div>
+								<!-- set 4-6 -->
+								<div>
+									<div class="slide">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">GW Wins Primary</h3>
+									</div>									
+									<div class="slide">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">Setting Precedent</h3>
+									</div>
+									<div class="slide overlay">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">Top Votes Go</h3>
+										<a href="#video" class="video" title="Video Lightbox"></a>
+									</div>
+								</div>
+								<!-- set 7-9 -->
+								<div>
+									<div class="slide overlay">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">BU Overtakes</h3>
+										<a href="#video" class="video" title="Video Lightbox"></a>
+									</div>									
+									<div class="slide">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">Team Wins</h3>
+									</div>
+									<div class="slide overlay">
+										<img src="img/examples/124x108.jpg" alt="" title="" width="124" height="108" class="inline-left">
+										<h3 class="mini">Team Loses</h3>
+										<a href="#video" class="video" title="Video Lightbox"></a>
+									</div>
+								</div>
 							</div>
 						</div>
+						<a class="next browse right">Next</a>
 						<div class="summary-container">
+							<!-- set 1-3 -->
 							<div class="summary selected">
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								<p>Praesent placerat, magna et sollicitudin luctus, ligula est porttitor libero, placerat, magna et sollicitudin luctus, ligula placerat, magna et sollicitudin luctus, ligula in elementum leo erat sit amet nisl.
@@ -325,6 +366,38 @@
 								<p>Mauris sed velit nisi. Vivamus sed neque vel augue pellentesque sagittis. Donec eget mi in odio fermentum ultricies ac vel metus.						
 								</p>
 							</div>
+							<!-- set 4-6 -->		
+							<div class="summary">
+								<h3><a href="#">GW Wins Primary</a></h3>
+								<p>Praesent placerat, magna et sollicitudin luctus, ligula est porttitor libero, placerat, magna et sollicitudin luctus, ligula placerat, magna et sollicitudin luctus, ligula in elementum leo erat sit amet nisl.
+								</p>
+							</div>
+							<div class="summary">
+								<h3><a href="#">Setting Precedent</a></h3>
+								<p>Nam at enim justo, non euismod orci. Duis nisl quam, vehicula at placerat id, luctus nec lacus. Curabitur lacinia metus ac urna condimentum elementum.						
+								</p>
+							</div>
+							<div class="summary">
+								<h3><a href="#">Top Votes Go</a></h3>
+								<p>Mauris sed velit nisi. Vivamus sed neque vel augue pellentesque sagittis. Donec eget mi in odio fermentum ultricies ac vel metus.						
+								</p>
+							</div>
+							<!-- set 7-9 -->
+							<div class="summary">
+								<h3><a href="#">BU Overtakes</a></h3>
+								<p>Praesent placerat, magna et sollicitudin luctus, ligula est porttitor libero, placerat, magna et sollicitudin luctus, ligula placerat, magna et sollicitudin luctus, ligula in elementum leo erat sit amet nisl.
+								</p>
+							</div>
+							<div class="summary">
+								<h3><a href="#">Team Wins</a></h3>
+								<p>Nam at enim justo, non euismod orci. Duis nisl quam, vehicula at placerat id, luctus nec lacus. Curabitur lacinia metus ac urna condimentum elementum.						
+								</p>
+							</div>
+							<div class="summary">
+								<h3><a href="#">Team Loses</a></h3>
+								<p>Mauris sed velit nisi. Vivamus sed neque vel augue pellentesque sagittis. Donec eget mi in odio fermentum ultricies ac vel metus.						
+								</p>
+							</div>					
 						</div>
 					</article>
 					<footer>
@@ -633,7 +706,9 @@
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
+  
+  <!-- jQuery Tools CDN -->
+  <script src="http://cdn.jquerytools.org/1.2.6/jquery.tools.min.js"></script>
 
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="js/plugins.js"></script>
