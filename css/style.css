@@ -434,6 +434,12 @@ section.featured-carousel article {
 	position: relative;
 }
 
+section.featured-carousel article .items > div {
+	border-left: 1px dotted #ccc;
+	border-right: 1px dotted #ccc;
+	width: 432px;
+}
+
 section.featured-carousel a.prev,
 section.featured-carousel a.next {
 	background-image: url(../img/carousel-nav.gif);
@@ -453,13 +459,14 @@ section.featured-carousel a.next.disabled {
 }
 
 section.featured-carousel a.next {
-	background-position-x: -6px;
+	background-position: -6px 0;
 	right: 0;
 }
 
 section.featured-carousel .scrollable {
-	width: 432px;
-	margin-left: 15px;
+	width: 434px;
+	height: 138px;
+	margin-left: 13px;
 }
 
 .slide {
@@ -512,8 +519,13 @@ section.featured-carousel .scrollable {
 	display: none;
 }
 
+.summary-container {
+	margin: 0 2.0em;
+}
+
 .summary-container .summary {
 	display: none;
+	margin-top: 1.0em;
 }
 
 .summary-container .summary.selected {
@@ -523,6 +535,29 @@ section.featured-carousel .scrollable {
 .summary-container .summary h3,
 .summary-container .summary p {
 	margin: 0;
+}
+
+/*
+ * rotating sidebar
+ */
+section.rotating-sidebar {
+} 
+section.rotating-sidebar .navi {
+	text-align: center;
+} 
+
+section.rotating-sidebar .scrollable {
+	height: auto;
+	width: 220px;
+}
+
+section.rotating-sidebar .items > div {
+	width: 220px;
+}
+
+section.rotating-sidebar a.next,
+section.rotating-sidebar a.prev {
+	display: none;
 }
 
 /*
@@ -1163,7 +1198,7 @@ body.breadcrumb #breadcrumb {
 	position:relative;
 	overflow:hidden;
 	width: inherit;
-	height: 138px;
+	height: inherit
 }
 
 /*
@@ -1185,6 +1220,38 @@ body.breadcrumb #breadcrumb {
 */
 .items div {
 	float:left;
+}
+
+
+/* position and dimensions of the navigator */
+.navi {
+    height:20px;
+}
+
+
+/* items inside navigator */
+.navi a {
+    width:8px;
+    height:8px;
+    margin:3px;
+    background:url(../img/navigator.png) 0 0 no-repeat;
+    display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+    font-size:1px;
+    
+    cursor: pointer;
+}
+
+/* mouseover state */
+.navi a:hover {
+    background-position:0 -8px;      
+}
+
+/* active state (current page state) */
+.navi a.active {
+    background-position:0 -16px;     
 }
 
 /*

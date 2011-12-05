@@ -9,13 +9,16 @@ $(document).ready(function()
 	 */
 	
 	$(".scrollable").scrollable();
+	$("#browsable").navigator().height($("#browsable .items").height());;
 	 
 	/*
 	 * give elements max height of tallest child
 	 */
 	$('div.summary-container').equalHeights();
 	$('section.selector-links div.link-container').equalHeights();
+	$('section.rotating-sidebar div.items').equalHeights();
 	
+
 	/*
 	 * search clear and replace
 	 */
@@ -32,7 +35,7 @@ $(document).ready(function()
 	/*
 	 * featured carousel
 	 */
-	$('div.slide:not(selected)').click(function()
+	$('section.featured-carousel div.slide:not(selected)').click(function()
 	{
 		$(this).siblings('.selected').removeClass('selected');
 		$(this).addClass('selected');	
