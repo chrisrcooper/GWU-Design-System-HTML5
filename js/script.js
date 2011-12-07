@@ -37,7 +37,7 @@ $(document).ready(function()
 	 */
 	$('section.featured-carousel div.slide:not(selected)').click(function()
 	{
-		$(this).siblings('.selected').removeClass('selected');
+		$('div.slide-container').find('div.slide.selected').removeClass('selected');
 		$(this).addClass('selected');	
 		var slide_clicked = $(this).index()+1;
 		var set_clicked = $(this).parent().index()+1;		
